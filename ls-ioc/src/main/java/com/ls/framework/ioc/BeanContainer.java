@@ -34,6 +34,7 @@ public class BeanContainer {
 
 //    public static List<Object> newBeanInstance(BeanDefinition beanDefinition) {
 //
+//
 //    }
 
     public Object getBean(String name) {
