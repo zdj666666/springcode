@@ -37,6 +37,7 @@ public class BeanContainer {
 //    }
 
     public Object getBean(String name) {
+        //map中添加bean
         return Optional.ofNullable(beanDefinitionMap.get(name))
                 .map(beanDefinition -> beanDefinition.getBean(this))
                 .orElseThrow(() -> new LSException("can not get bean by name: " + name));
